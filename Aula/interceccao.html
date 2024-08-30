@@ -7,10 +7,25 @@
 </head>
 <body>
     <script>
-        
+        /*
+        Intersecção de Listas: Crie uma função que receba duas listas e retorne
+         uma nova lista contendo apenas os elementos que aparecem em ambas as listas.
+        */
+        lista1 = [1,2,3,4,5,6,7]
+        lista2 = [3,8,9,10,1,8,4]
+        lista3 = []
 
+        for (pos in lista1) {
+
+            /* O ".includes" seria como o "if ELEMENTO in LISTA" do Python, uma forma de verificar se o elemento
+            existe na lista" */
+
+            if (lista2.includes(lista1[pos])) {
+                lista3.push(lista1[pos])
+            }
+        }
+
+        alert(lista3)
     </script>
-
-
 </body>
 </html>
