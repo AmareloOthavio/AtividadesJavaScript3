@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Verificação de Elemento: Verifique se o número 5 está
+         presente na lista e exiba uma mensagem indicando se está ou não.
+
+        */
+        var lista = [1,2,3,4,5,6,7,8]
+        cincoEncontrado = false
+        for (numero in lista) {
+            if (lista[numero] == 5) {
+                alert("Número 5 encontrado! 👍")
+                cincoEncontrado = true
+            }
+            else{
+                continue
+            }
+        }
+        if (cincoEncontrado == false) {
+            alert("Número 5 não foi encontrado 🙁")
+        }
+    </script>
+    <p id="a"></p>
+
+</body>
+</html>
